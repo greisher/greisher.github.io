@@ -42,5 +42,7 @@ $(document).ready(function(){
             $("#hazelverseInstructions").remove();
             $('#success_page')[0].click();
         }
+    } else {
+        $("#hazelverseInstructions").remove();
     }
 });
