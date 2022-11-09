@@ -29,15 +29,17 @@ function getMobileOperatingSystem() {
  * This function should only run on iOS devices
  */
 $(document).ready(function(){
-    //if (getMobileOperatingSystem() == "iOS") {
+    if (getMobileOperatingSystem() == "iOS") {
         const queryString = window.location.search;
         console.log(queryString);
         const urlParams = new URLSearchParams(queryString);
         var isHazelverse = false;
         if (urlParams.has('isHazelverse') && urlParams.get('isHazelverse')) {
             console.log("show image");
+            $("#marginBar").remove();
         } else {
+            $("#hazelverseInstructions").remove();
             $('#success_page')[0].click();
         }
-    //}
+    }
 });
