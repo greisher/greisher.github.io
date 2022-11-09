@@ -37,6 +37,7 @@ $(document).ready(function(){
         if (urlParams.has('isHazelverse') && urlParams.get('isHazelverse')) {
             console.log("show image");
             $("#marginBar").remove();
+            $('#success_page')[0].click();
         } else {
             $("#hazelverseInstructions").remove();
             $('#success_page')[0].click();
